@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 public float moveSpeed = 5f; //controls how fast player moves
 
 public Rigidbody2D rb;
-
+    private RockThrower thrower;
 Vector2 movement;
 
 public Animator animator; //references the animation/animator in unity so when player moves,animation plays
@@ -19,6 +19,7 @@ public Animator animator; //references the animation/animator in unity so when p
     // Start is called before the first frame update
     void Start(){
     walking = false;
+        thrower = GetComponent<RockThrower>();
     }
     
     
