@@ -1,0 +1,34 @@
+title: Log
+tags: 
+colorID: 0
+position: 810,363
+---
+<< if $hasAxe is true >> 
+<<sound log_trigger Dialogue_D7>>
+Maybe I can use this axe...
+<<destroy log>>
+<<destroy log_trigger>>
+<< else >> 
+ <<sound log_trigger Dialogue_D5>>
+there's a log in the way here.
+<<sound log_trigger Dialogue_D6>>
+Did I see anything I could use to get rid of it...?
+<< endif >>
+===
+title: Node
+tags: 
+colorID: 0
+position: 931,47
+---
+Empty Text
+===
+title: Axe
+tags: 
+colorID: 0
+position: 931,47
+---
+ <<sound AxeObj Dialogue_B4>>
+An axe... this might come in handy.
+<<destroy AxeObj>>
+<< set $hasAxe to true >>
+===
